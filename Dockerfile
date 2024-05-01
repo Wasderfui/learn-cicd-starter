@@ -5,4 +5,5 @@ COPY . .
 ADD notely /usr/bin/notely
 EXPOSE 8080
 
+
 CMD ["notely"]
