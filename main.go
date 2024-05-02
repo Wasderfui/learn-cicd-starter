@@ -13,10 +13,10 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/cors"
-	//"github.com/joho/godotenv"
+	_ "github.com/joho/godotenv"
 
 	"github.com/bootdotdev/learn-cicd-starter/internal/database"
-	// "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 type apiConfig struct {
