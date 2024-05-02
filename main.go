@@ -16,7 +16,6 @@ import (
 	//"github.com/joho/godotenv"
 
 	"github.com/bootdotdev/learn-cicd-starter/internal/database"
-
 	// "github.com/go-sql-driver/mysql"
 )
 
@@ -29,12 +28,13 @@ var staticFiles embed.FS
 
 func main() {
 	//err := godotenv.Load(".env")
-//	if err != nil {
-//		log.Fatalf("Error loading .env file: %v", err)
-//	}
+	//	if err != nil {
+	//		log.Fatalf("Error loading .env file: %v", err)
+	//	}
 
 	port := os.Getenv("PORT")
-	if port == "" {port = "8080"
+	if port == "" {
+		port = "8080"
 	}
 
 	apiCfg := apiConfig{}
